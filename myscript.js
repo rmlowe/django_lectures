@@ -1,15 +1,16 @@
+var x = 1;
 
-var ham = 0;
-var cheese = 0;
+// Write a while loop that prints out
+// only the even numbers from 1 to 10.
 
-var report = "blank";
+while (x <= 10) {
+  //console.log("x is currently: "+x);
 
-if (ham >= 10 && cheese >= 10) {
-  report = "Strong sales of both ham and cheese!"
-}else if (ham === 0 && cheese === 0) {
-  report = "Nothing Sold!"
-}else {
-  report = "We had some sales of items"
+  if (x % 2 === 0) {
+    console.log("x is: " + x);
+  }
+
+  //console.log("x is still less than 5, adding 1 to x");
+
+  x = x+1;
 }
-
-console.log(report);
