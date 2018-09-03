@@ -1,6 +1,12 @@
-// FOR LOOPS
-var word = "ABABABABAB"
+// Global Scope
+var v = " GLOBAL V"
+var stuff = "GLOBAL STUFF"
 
-for (var i = 0; i < word.length; i=i+2) {
-  console.log(word[i]);
+function fun(stuff) {
+  console.log(v);
+  stuff = "Reassign stuff inside func"
+  console.log(stuff);
 }
+
+fun()
+console.log(stuff);
